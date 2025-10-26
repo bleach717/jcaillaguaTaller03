@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcaillaguaTaller03.Views.vRegistro"
+             BackgroundColor="White">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+            Text="REGISTRO"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="Black"
+            FontSize="25"
+            Padding="50"/>
+
+            <Image Source="isalarios.png"
+                   MaximumHeightRequest="200"
+                   HorizontalOptions="Center"/> 
+
+            <Grid RowSpacing="10"
+                  Margin="20,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Identificación:"
+                           FontSize="16"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           TextColor="black"/>
+                <Label Text="Nombre:"
+                           FontSize="16"
+                           Grid.Row="1"
+                           Grid.Column="0"
+                           TextColor="Black"/>
+                <Label Text="Apellido:"
+                           FontSize="16"
+                           Grid.Row="2"
+                           Grid.Column="0"
+                           TextColor="black"/>
+                <Label Text="Fecha:"
+                           FontSize="16"
+                           Grid.Row="3"
+                           Grid.Column="0"
+                           TextColor="Black"/>
+                <Label Text="Correo:"
+                           FontSize="16"
+                           Grid.Row="4"
+                           Grid.Column="0"
+                           TextColor="black"/>
+                <Label Text="Salario:"
+                           FontSize="16"
+                           Grid.Row="5"
+                           Grid.Column="0"
+                           TextColor="black"/>
+
+                <Picker x:Name="pkIdentificacion"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            BackgroundColor="Grey">
+                    <Picker.Items>
+                        <x:String>Cedula</x:String>
+                        <x:String>RUC</x:String>
+                        <x:String>Pasaporte</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Entry x:Name="txtIdentificacion"
+                           Placeholder="Identificacion"
+                           Grid.Row="0"
+                           Grid.Column="2"
+                           Keyboard="Numeric"
+                           MaxLength="13"
+                           TextColor="black"/>
+
+                <Entry x:Name="txtNombres"
+                            Placeholder="Nombres"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            TextColor="black"
+                            Keyboard="Text"/>
+
+                <Entry x:Name="txtApellidos"
+                            Placeholder="Apellidos"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            TextColor="black"
+                            Keyboard="Text"/>
+
+                <DatePicker x:Name="dtpFecha"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        BackgroundColor="Grey">
+                </DatePicker>
+
+                <Entry x:Name="txtCorreo"
+                            Placeholder="Correo"
+                            Grid.Row="4"
+                            Grid.Column="1"
+                            TextColor="black"
+                            Keyboard="Email"/>
+
+                <Entry x:Name="txtSalario"
+                            Placeholder="Salario"
+                            Grid.Row="5"
+                            Grid.Column="1"
+                            TextColor="black"
+                            Keyboard="Numeric"/>
+
+            </Grid>
+            
+            <Button x:Name="btnAceptar"
+                    Text="Aceptar"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    BackgroundColor="Gray"
+                    TextColor="White"
+                    Clicked="btnAceptar_Clicked">
+            </Button>            
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
