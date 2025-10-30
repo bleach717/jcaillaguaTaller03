@@ -87,7 +87,7 @@ public partial class vRegistro : ContentPage
         string salario = txtSalario.Text;
         string aporteIess = aporte.ToString("F2");
 
-        await DisplayAlert("Datos ingresados correctamnte", "", "Continuar");
+        await DisplayAlert("Datos ingresados correctamente", "", "Continuar");
         await Navigation.PushAsync(new vResumen(tipoIdentificacion,identificacion,nombre,apellido,fecha,correo,salario,aporteIess));
     }
 }
