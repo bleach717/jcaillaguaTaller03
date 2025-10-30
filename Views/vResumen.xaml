@@ -2,6 +2,21 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jcaillaguaTaller03.Views.vResumen">
+    
+    <ContentPage.Resources>
+        <Style x:Key="estiloLightBlue"   TargetType="Label">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="TextColor" Value="LightSteelBlue"/>
+        </Style>
+
+        <Style x:Key="estiloWhite" TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
+
+
+
     <VerticalStackLayout>
         <Label 
             Text="RESUMEN"
@@ -27,86 +42,70 @@
             </Grid.ColumnDefinitions>
 
             <Label Text="Tipo Identificación:"
-                   FontSize="16"
+                   Style="{StaticResource estiloLightBlue}"
                    Grid.Row="0"
-                   Grid.Column="0"
-                   TextColor="LightSteelBlue"/>            
+                   Grid.Column="0"/>            
             <Label Text="Identificación:"
-                   FontSize="16"
+                   Style="{StaticResource estiloLightBlue}"
                    Grid.Row="1"
-                   Grid.Column="0"
-                   TextColor="LightSteelBlue"/>
+                   Grid.Column="0"/>
             <Label Text="Nombre:"
-                   FontSize="16"
+                   Style="{StaticResource estiloLightBlue}"
                    Grid.Row="2"
-                   Grid.Column="0"
-                   TextColor="LightSteelBlue"/>
+                   Grid.Column="0"/>
             <Label Text="Apellido:"
-                   FontSize="16"
+                   Style="{StaticResource estiloLightBlue}"
                    Grid.Row="3"
-                   Grid.Column="0"
-                   TextColor="LightSteelBlue"/>
+                   Grid.Column="0"/>
             <Label Text="Fecha:"
-                   FontSize="16"
+                   Style="{StaticResource estiloLightBlue}"
                    Grid.Row="4"
-                   Grid.Column="0"
-                   TextColor="LightSteelBlue"/>
+                   Grid.Column="0"/>
             <Label Text="Correo:"
-                   FontSize="16"
+                   Style="{StaticResource estiloLightBlue}"
                    Grid.Row="5"
-                   Grid.Column="0"
-                   TextColor="LightSteelBlue"/>
+                   Grid.Column="0"/>
             <Label Text="Salario:"
-                   FontSize="16"
+                   Style="{StaticResource estiloLightBlue}"
                    Grid.Row="6"
-                   Grid.Column="0"
-                   TextColor="LightSteelBlue"/>
+                   Grid.Column="0"/>
             <Label Text="Aportacion:"
-                   FontSize="16"
+                   Style="{StaticResource estiloLightBlue}"
                    Grid.Row="7"
-                   Grid.Column="0"
-                   TextColor="LightSteelBlue"/>
+                   Grid.Column="0"/>
 
             <Label x:Name="lblTipoIdentificacion"
-                   FontSize="16"
+                   Style="{StaticResource estiloWhite}"
                    Grid.Row="0"
-                   Grid.Column="1"
-                   TextColor="White"/>
+                   Grid.Column="1"/>
             <Label x:Name="lblIdentificacion"
-                   FontSize="16"
+                   Style="{StaticResource estiloWhite}"
                    Grid.Row="1"
-                   Grid.Column="1"
-                   TextColor="White"/>
+                   Grid.Column="1"/>
             <Label x:Name="lblNombre"
-                   FontSize="16"
+                   Style="{StaticResource estiloWhite}"
                    Grid.Row="2"
-                   Grid.Column="1"
-                   TextColor="White"/>
+                   Grid.Column="1"/>
             <Label x:Name="lblApellido"
-                   FontSize="16"
+                   Style="{StaticResource estiloWhite}"
                    Grid.Row="3"
-                   Grid.Column="1"
-                   TextColor="White"/>
+                   Grid.Column="1"/>
             <Label x:Name="lbalFecha"
-                   FontSize="16"
+                   Style="{StaticResource estiloWhite}"
                    Grid.Row="4"
-                   Grid.Column="1"
-                   TextColor="White"/>
+                   Grid.Column="1"/>
             <Label x:Name="lblCorreo"
-                   FontSize="16"
+                   Style="{StaticResource estiloWhite}"
                    Grid.Row="5"
-                   Grid.Column="1"
-                   TextColor="White"/>
+                   Grid.Column="1"/>
             <Label x:Name="lblSalario"
-                   FontSize="16"
+                   Style="{StaticResource estiloWhite}"
                    Grid.Row="6"
-                   Grid.Column="1"
-                   TextColor="White"/>
+                   Grid.Column="1"/>
             <Label x:Name="lblAportacion"
-                   FontSize="16"
+                   Style="{StaticResource estiloWhite}"
                    Grid.Row="7"
-                   Grid.Column="1"
-                   TextColor="White"/>
+                   Grid.Column="1"/>
         </Grid>
 
         <Button x:Name="btnExportar"

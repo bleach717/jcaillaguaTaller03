@@ -3,6 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jcaillaguaTaller03.Views.vRegistro"
              BackgroundColor="White">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="TextColor" Value="Black"/>
+         </Style>
+
+        <Style TargetType="Entry">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="PlaceholderColor" Value="gray"/>
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
+    </ContentPage.Resources>
+        
     <ScrollView>
         <VerticalStackLayout>
             <Label 
@@ -35,35 +48,23 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Identificación:"
-                           FontSize="16"
                            Grid.Row="0"
-                           Grid.Column="0"
-                           TextColor="black"/>
+                           Grid.Column="0"/>
                 <Label Text="Nombre:"
-                           FontSize="16"
                            Grid.Row="1"
-                           Grid.Column="0"
-                           TextColor="Black"/>
+                           Grid.Column="0"/>
                 <Label Text="Apellido:"
-                           FontSize="16"
                            Grid.Row="2"
-                           Grid.Column="0"
-                           TextColor="black"/>
+                           Grid.Column="0"/>
                 <Label Text="Fecha:"
-                           FontSize="16"
                            Grid.Row="3"
-                           Grid.Column="0"
-                           TextColor="Black"/>
+                           Grid.Column="0"/>
                 <Label Text="Correo:"
-                           FontSize="16"
                            Grid.Row="4"
-                           Grid.Column="0"
-                           TextColor="black"/>
+                           Grid.Column="0"/>
                 <Label Text="Salario:"
-                           FontSize="16"
                            Grid.Row="5"
-                           Grid.Column="0"
-                           TextColor="black"/>
+                           Grid.Column="0"/>
 
                 <Picker x:Name="pkIdentificacion"
                             Grid.Row="0"
@@ -81,21 +82,18 @@
                            Grid.Row="0"
                            Grid.Column="2"
                            Keyboard="Numeric"
-                           MaxLength="13"
-                           TextColor="black"/>
+                           MaxLength="13"/>
 
                 <Entry x:Name="txtNombres"
                             Placeholder="Nombres"
                             Grid.Row="1"
                             Grid.Column="1"
-                            TextColor="black"
                             Keyboard="Text"/>
 
                 <Entry x:Name="txtApellidos"
                             Placeholder="Apellidos"
                             Grid.Row="2"
                             Grid.Column="1"
-                            TextColor="black"
                             Keyboard="Text"/>
 
                 <DatePicker x:Name="dtpFecha"
@@ -108,14 +106,12 @@
                             Placeholder="Correo"
                             Grid.Row="4"
                             Grid.Column="1"
-                            TextColor="black"
                             Keyboard="Email"/>
 
                 <Entry x:Name="txtSalario"
                             Placeholder="Salario"
                             Grid.Row="5"
                             Grid.Column="1"
-                            TextColor="black"
                             Keyboard="Numeric"/>
 
             </Grid>
